@@ -176,3 +176,5 @@ def lambda_handler(event, context):
 
     # Write result to S3
     write_s3(df=df, bucket="fangkeyphrases1", name=names) 
+
+    
