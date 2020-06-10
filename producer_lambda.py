@@ -71,3 +71,5 @@ def lambda_handler(event, context):
     extra_logging = {"table": TABLE, "queue": QUEUE}
     LOG.info(f"event {event}, context {context}", extra=extra_logging)
     send_emissions(table=TABLE, queue_name=QUEUE)
+
+    
